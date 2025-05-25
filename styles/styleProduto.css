@@ -49,68 +49,60 @@ footer {
 .fas.fa-search:hover {
   color: #ff6600;
 }
-.apresentacao {
+
+main {
   background: linear-gradient(to bottom, #d9d9d9, white);
-  padding: 80px 20px;
+  padding: 30px;
   text-align: center;
-}
-
-.apresentacao h1 {
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #111;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration: none;
-  transition: color 0.35s ease;
-}
-.apresentacao h1:hover {
-  color: #ff6600;
-}
-
-.texto-hover {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 2s ease forwards;
-  animation-delay: 0, 3s;
-
-  max-width: 1200px;
-  margin: 0 auto;
-  font-size: 22px;
-  line-height: 1.6;
-  color: white;
-  background-color: black;
-  padding: 50px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.cards {
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
 }
-.cards img {
-  width: 500px;
-  height: 500px;
+main h1 {
+  margin-bottom: 60px;
+  transition: color 0.35s ease;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+main h1:hover {
+  color: #ff6600;
+}
+hr {
+  border: none;
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+}
+
+.produtos img {
+  width: 300px;
+  height: 300px;
   margin: 30px;
   border-radius: 30px;
-  object-fit: cover;
+
   box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.cards img:hover {
+.produtos img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 1);
+}
+
+.item {
+  text-align: center;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
 }
 .footer-geral {
   background-color: black;

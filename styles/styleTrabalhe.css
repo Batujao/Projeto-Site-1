@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Russo One", sans-serif;
+}
+header,
+main,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background: linear-gradient(to bottom, black, #d9d9d9);
+  padding: 20px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 190px;
+  box-sizing: border-box;
+}
+
+.logo-link {
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.35s ease;
+}
+
+.menu a:hover {
+  color: #ff6600;
+}
+
+.fas.fa-search {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.35s ease;
+}
+
+.fas.fa-search:hover {
+  color: #ff6600;
+}
+
+main h1 {
+  background: linear-gradient(to bottom, #d9d9d9, white);
+  margin-top: 0px;
+  text-align: center;
+  color: black;
+  font-size: 3.5rem;
+}
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 40px 20px 80px 20px;
+}
+
+.formulario form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario form input {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-family: "Russo One", sans-serif;
+  background-color: white;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formulario form input:focus {
+  border-color: #ff6600;
+  outline: none;
+  box-shadow: 0 0 8px #ff6600;
+}
+
+.formulario form button {
+  padding: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.formulario form button:hover {
+  background-color: #ff6600;
+  transform: scale(1.05);
+}
+
+video {
+  display: block;
+  margin: 40px auto 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+}
+.footer-geral {
+  background-color: black;
+  padding: 40px;
+  color: white;
+  margin-top: 60px;
+}
+.footer-geral a {
+  color: grey;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
