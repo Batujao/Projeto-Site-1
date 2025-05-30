@@ -38,89 +38,55 @@ footer {
 .menu a:hover {
   color: #ff6600;
 }
-
 .fas.fa-search {
   font-size: 30px;
   color: black;
   cursor: pointer;
   text-decoration: none;
+
   transition: color 0.35s ease;
 }
-
 .fas.fa-search:hover {
   color: #ff6600;
 }
-
-main h1 {
+main {
   background: linear-gradient(to bottom, #d9d9d9, white);
-  margin-top: 0px;
+  padding: 40px 20px;
+}
+
+h1 {
   text-align: center;
   color: black;
   font-size: 3.5rem;
+  margin-bottom: 40px;
   transition: color 0.35s ease;
 }
-main h1:hover {
+h1:hover {
   color: #ff6600;
 }
 
-.formulario {
-  display: flex;
-  justify-content: center;
-  margin: 40px 20px 80px 20px;
-}
-
-.formulario form {
-  background-color: rgba(255, 255, 255, 0.9);
+.duvidas {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
-  max-width: 1200px;
-  width: 100%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
-.formulario form input {
-  padding: 15px;
-  border: 2px solid black;
-  border-radius: 15px;
+.duvida h2 {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.duvida p {
+  color: #333;
   font-size: 1.2rem;
-  font-family: "Russo One", sans-serif;
-  background-color: white;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.formulario form input:focus {
-  border-color: #ff6600;
-  outline: none;
-  box-shadow: 0 0 8px #ff6600;
-}
-
-.formulario form button {
-  padding: 30px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.formulario form button:hover {
-  background-color: #ff6600;
-  transform: scale(1.05);
-}
-
-video {
-  display: block;
-  margin: 40px auto 0 auto;
-  width: 80%;
-  max-width: 1200px;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+  line-height: 1.6;
 }
 .footer-geral {
   background-color: black;
