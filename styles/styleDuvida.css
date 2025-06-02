@@ -102,3 +102,7 @@ h1:hover {
   align-items: center;
   justify-content: center;
 }
+main a {
+  color: #444;
+  text-decoration: none;
+}
