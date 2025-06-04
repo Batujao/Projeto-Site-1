@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nike-Trabalhe Conosco</title>
+    <title>Nike - Trabalhe Conosco</title>
     <link rel="stylesheet" href="../styles/styleTrabalhe.css" />
     <link
       rel="stylesheet"
@@ -24,13 +24,16 @@
         <a href="contato.html">Quem Somos</a>
         <a href="trabalhe-conosco.html">Trabalhe Conosco</a>
         <a href="duvidas.html">Dúvidas</a>
-
         <i class="fas fa-search"></i>
       </nav>
     </header>
+
     <main>
       <h1>Trabalhe Conosco</h1>
+
       <section class="formulario">
+        <input type="checkbox" id="check-enviar" />
+
         <form action="#" method="POST">
           <input type="text" name="nome" placeholder="Nome Completo" required />
           <input type="email" name="email" placeholder="E-mail" required />
@@ -47,14 +50,23 @@
             required
           />
           <input type="text" name="cidade" placeholder="Cidade" required />
-          <button type="submit">Enviar</button>
+
+          <!-- Botão personalizado -->
+          <label for="check-enviar" class="btn-enviar">Enviar</label>
         </form>
+
+        <!-- Mensagem que aparece ao clicar no botão -->
+        <div class="mensagem-confirmacao">
+          ✅ Formulário enviado com sucesso!<br />
+          Verifique seu e-mail. Olhe também sua caixa de SPAM.
+        </div>
       </section>
 
       <section class="video-trabalhe">
         <video src="../videos/nikeNeon.mp4" autoplay muted loop></video>
       </section>
     </main>
+
     <footer>
       <div class="footer-geral">
         <p>© 2025 Desenvolvido por João Vitor Antoniel</p>

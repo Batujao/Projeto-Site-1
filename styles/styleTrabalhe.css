@@ -42,7 +42,7 @@ footer {
 .fas.fa-search {
   font-size: 30px;
   color: black;
-  cursor: pointer;
+  cursor: default;
   text-decoration: none;
   transition: color 0.35s ease;
 }
@@ -97,21 +97,46 @@ main h1:hover {
   outline: none;
   box-shadow: 0 0 8px #ff6600;
 }
-
-.formulario form button {
-  padding: 30px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+#check-enviar {
+  display: none;
 }
 
-.formulario form button:hover {
+.btn-enviar {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Russo One", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn-enviar:hover {
   background-color: #ff6600;
-  transform: scale(1.05);
+  color: white;
+}
+
+.mensagem-confirmacao {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e6ffe6;
+  border: 2px solid #2ecc71;
+  border-radius: 20px;
+  color: #2d8f4d;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  margin-left: 30px;
+}
+
+#check-enviar:checked ~ form + .mensagem-confirmacao {
+  display: block;
 }
 
 video {
