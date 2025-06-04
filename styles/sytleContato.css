@@ -41,7 +41,7 @@ footer {
 .fas.fa-search {
   font-size: 30px;
   color: black;
-  cursor: default;
+  cursor: defaul;
   text-decoration: none;
 
   transition: color 0.35s ease;
